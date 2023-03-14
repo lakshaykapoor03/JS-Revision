@@ -35,7 +35,6 @@
 
 // console.log(Object.keys(info))
 
-
 // console.log(Object.keys(info))
 
 // const newArr=[..."abc"]
@@ -58,12 +57,8 @@
 //  const newArr=numbers.filter((n,i)=> n%2==0)
 //  console.log(newArr)
 
-
-
 //  const result = numbers.map((number)=> number%2==0?"true":"false")
 //  console.log(result)
-
-
 
 // const products= [
 //     {productNmae:"abc", price:500},
@@ -85,11 +80,9 @@
 //     key2:"value2"
 // }
 
-
 // const obj2 = Object.assign({}, obj)
 
 // obj.key3="value3"
-
 
 // console.log(obj)
 // console.log(obj2)
@@ -113,21 +106,39 @@
 //     }
 //     return user;
 
-
 // }
 
 // console.log(createUser("lakshay", "kapoor", "kapoorlakshay70@gmail.com", 22, "faridabad"))
 
+// const obj1 ={
+//     key1:"value1",
+//     key2:"value2"
+// }
 
-const obj1 ={
-    key1:"value1",
-    key2:"value2"
-}
+// const obj2= Object.create(obj1);
 
-const obj2= Object.create(obj1);
+// obj2.key3 = "value3";
 
-obj2.key3 = "value3";
+// console.log(obj2)
+// console.log(obj2.__proto__)
 
-console.log(obj2)
-console.log(obj2.__proto__)
+// const calculatePower =(power)=> {
+//     return((number)=> number**power)
+
+// }
+
+// const calc = calculatePower(2)
+// console.log(calc(3))
+
+const myFunc = () => {
+  console.log("Hi, you called me");
+  return () => {
+    console.log("mai already ek baar call ho chuka hoon");
+    return (()=>console.log("mai 2 baar call ho chuka hoon"))
+  };
+};
+
+ const functionCall = myFunc()
+ functionCall()
+ functionCall
 
