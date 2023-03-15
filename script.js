@@ -142,3 +142,11 @@ const myFunc = () => {
  functionCall()
  functionCall
 
+// defer is btter than async in script file
+// defer is the most efficient method in script as bith scripting and parsing of the code take
+//  place simultaneously and as the script loads it will wait for whole HTML to parse(load) 
+//  and willnot give any error whereas in async method if script loads firstit will start 
+//  executing an will not wait fr the whole HTML file to parse(load)and can give errorin many cases.
+
+// Example :- <script  src="script.js" defer></script>
+
