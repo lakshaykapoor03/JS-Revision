@@ -130,17 +130,17 @@
 // const calc = calculatePower(2)
 // console.log(calc(3))
 
-const myFunc = () => {
-  console.log("Hi, you called me");
-  return () => {
-    console.log("mai already ek baar call ho chuka hoon");
-    return (()=>console.log("mai 2 baar call ho chuka hoon"))
-  };
-};
+// const myFunc = () => {
+//   console.log("Hi, you called me");
+//   return () => {
+//     console.log("mai already ek baar call ho chuka hoon");
+//     return (()=>console.log("mai 2 baar call ho chuka hoon"))
+//   };
+// };
 
- const functionCall = myFunc()
- functionCall()
- functionCall
+//  const functionCall = myFunc()
+//  functionCall()
+//  functionCall
 
 // defer is btter than async in script file
 // defer is the most efficient method in script as bith scripting and parsing of the code take
@@ -150,3 +150,15 @@ const myFunc = () => {
 
 // Example :- <script  src="script.js" defer></script>
 
+// const arr = [1, 2, 3, 4]
+// const a = 1;
+// console.log(arr+a)
+
+// const rootNode = document.getRootNode()
+// console.log(rootNode.childNodes[0])
+
+const todoList= document.querySelector(".todo-list")
+console.log(todoList)
+
+todoList.firstElementChild.remove();
+ 
