@@ -157,8 +157,35 @@
 // const rootNode = document.getRootNode()
 // console.log(rootNode.childNodes[0])
 
-const todoList= document.querySelector(".todo-list")
-console.log(todoList)
+// const todoList= document.querySelector(".todo-list")
+// console.log(todoList)
 
-todoList.firstElementChild.remove();
+// // todoList.firstElementChild.remove();
+
+// const learnBtn = document.querySelectorAll(".btn-headline")
+// console.log(learnBtn)
+
+// learnBtn.forEach((btn)=>{
+// btn.addEventListener("click",(e)=>{
+//     console.log(e.target.innerText)
+    
+  
+//    })
+  
+// })
+
+console.log("hey there")
+
+setTimeout(()=>{
+    console.log("setTimeOut Called")
+},2000)
+
+console.log(".....")
+for(var i=0; i<=50; i++){
+    console.log("for loop is continuing"+ " "+ i)
+    i++;
+
+}
+
+
  
