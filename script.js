@@ -174,18 +174,85 @@
   
 // })
 
-console.log("hey there")
+// console.log("hey there")
 
-setTimeout(()=>{
-    console.log("setTimeOut Called")
-},2000)
+// setTimeout(()=>{
+//     console.log("setTimeOut Called")
+// },2000)
 
-console.log(".....")
-for(var i=0; i<=50; i++){
-    console.log("for loop is continuing"+ " "+ i)
-    i++;
+// console.log(".....")
+// for(var i=0; i<=50; i++){
+//     console.log("for loop is continuing"+ " "+ i)
+//     i++;
 
+// }
+
+// const getTwoNumbers = function (number1, number2, callback){
+//     if (typeof number1 === "number" && typeof number2 === "number"){
+//         callback(number1, number2)
+//     }
+//     else{
+//         console.log("wrong data type")
+//     }
+// }
+
+// const callBack = (num1, num2)=>{
+//     console.log(num1 + num2)
+// }
+
+// getTwoNumbers(2,"4", callBack)
+// console.log("scriptStart")
+
+// const ingridients = ["salt", "spices", "mango", "rice", "apple"]
+
+// const makeFriedRice = new Promise ((resolve, reject) =>{
+//     if (ingridients.includes("salts") && ingridients.includes("spices") && ingridients.includes("rice")){
+//         resolve ({value :"friedRice"})
+//     }
+//     else {
+//         reject ("unable to make fried rice")
+//     }
+// }
+// )
+// setTimeout(()=>{
+//     console.log("yo yho honey singh")
+// setTimeout(()=>{
+//         console.log("settime 2")
+//     }, 2000)
+// }, 1000)
+
+
+// makeFriedRice.then(
+//     (friedRice)=>{
+//         console.log(friedRice)
+//     }
+// ). catch((error)=>{
+//     console.log(error)
+// })
+
+// console.log("Script End")
+
+// const firstName = fun();
+// function fun(){
+// let fname = "lakshay"
+
+//     return (`my name is ${fname}`)
+// }
+// console.log(firstName)
+
+function multiply (a,b){
+    let answer= a;
+    for(i=1; i< b ; i++){
+        answer+=a
+
+
+    }
+    return(answer)
 }
+
+console.log(multiply(5,3))
+
+
 
 
  
