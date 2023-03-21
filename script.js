@@ -240,17 +240,37 @@
 // }
 // console.log(firstName)
 
-function multiply (a,b){
-    let answer= a;
-    for(i=1; i< b ; i++){
-        answer+=a
+// function multiply (a,b){
+//     let answer= a;
+//     for(i=1; i< b ; i++){
+//         answer+=a
 
 
-    }
-    return(answer)
+//     }
+//     return(answer)
+// }
+
+// console.log(multiply(5,3))
+
+// const promise = new Promise ((resolve, reject) => {
+//     resolve(console.log("okay"));
+//     reject(console.log("not okay"))
+// })
+
+// promise.then(
+//     data => console.log(data)
+// )
+
+const API= "https://jsonplaceholder.typicode.com/users"
+
+const res =  async()=>{
+    const data= await fetch(API)
+    const json = await data.json()
+    console.log(json)
 }
+console.log(res())
 
-console.log(multiply(5,3))
+
 
 
 
