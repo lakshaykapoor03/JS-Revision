@@ -144,8 +144,8 @@
 
 // defer is btter than async in script file
 // defer is the most efficient method in script as bith scripting and parsing of the code take
-//  place simultaneously and as the script loads it will wait for whole HTML to parse(load) 
-//  and willnot give any error whereas in async method if script loads firstit will start 
+//  place simultaneously and as the script loads it will wait for whole HTML to parse(load)
+//  and willnot give any error whereas in async method if script loads firstit will start
 //  executing an will not wait fr the whole HTML file to parse(load)and can give errorin many cases.
 
 // Example :- <script  src="script.js" defer></script>
@@ -168,10 +168,9 @@
 // learnBtn.forEach((btn)=>{
 // btn.addEventListener("click",(e)=>{
 //     console.log(e.target.innerText)
-    
-  
+
 //    })
-  
+
 // })
 
 // console.log("hey there")
@@ -221,7 +220,6 @@
 //     }, 2000)
 // }, 1000)
 
-
 // makeFriedRice.then(
 //     (friedRice)=>{
 //         console.log(friedRice)
@@ -245,7 +243,6 @@
 //     for(i=1; i< b ; i++){
 //         answer+=a
 
-
 //     }
 //     return(answer)
 // }
@@ -261,18 +258,71 @@
 //     data => console.log(data)
 // )
 
-const API= "https://jsonplaceholder.typicode.com/users"
+// const API= "https://jsonplaceholder.typicode.com/users"
 
-const res =  async()=>{
-    const data= await fetch(API)
-    const json = await data.json()
-    console.log(json)
+// const res =  async()=>{
+//     const data= await fetch(API)
+//     const json = await data.json()
+//     console.log(json)
+// }
+// console.log(res())
+
+const cart = ["shoes", "pants", "shirt", "kurta"];
+
+function createOrder(cart) {
+  const pr = new Promise((resolve, reject) => {
+    if (!validateCart(cart)) {
+      const error = new Error("cart not valid");
+      reject(error);
+    }
+    const orderId = "12345";
+    if (orderId) {
+      resolve(orderId);
+    }
+  });
+  return pr;
 }
-console.log(res())
 
+function proceedToPayment() {
+  return new Promise((resolve, reject) => {
+    resolve("payment successful");
+  });
+}
 
+function showOrderSummary() {
+  return new Promise((resolve, reject) => {
+    resolve("update the wallet");
+  });
+}
 
+function updateWallet() {
+  return new Promise((resolve, reject) => {
+    resolve("bal is 1000");
+  });
+}
 
-
-
- 
+function validateCart() {
+  return true;
+}
+createOrder(cart)
+  .then((orderId) => {
+    console.log(orderId);
+    return orderId;
+  })
+  .then((val) => {
+    return proceedToPayment(val);
+  })
+  .then((info) => {
+    console.log(info);
+    return showOrderSummary(info);
+  })
+  .then((balance) => {
+    console.log(balance);
+    return updateWallet(balance);
+  })
+  .then((balance) => {
+    console.log(balance);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
