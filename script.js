@@ -267,62 +267,133 @@
 // }
 // console.log(res())
 
-const cart = ["shoes", "pants", "shirt", "kurta"];
+// const cart = ["shoes", "pants", "shirt", "kurta"];
 
-function createOrder(cart) {
-  const pr = new Promise((resolve, reject) => {
-    if (!validateCart(cart)) {
-      const error = new Error("cart not valid");
-      reject(error);
-    }
-    const orderId = "12345";
-    if (orderId) {
-      resolve(orderId);
-    }
-  });
-  return pr;
-}
+// function createOrder(cart) {
+//   const pr = new Promise((resolve, reject) => {
+//     if (!validateCart(cart)) {
+//       const error = new Error("cart not valid");
+//       reject(error);
+//     }
+//     const orderId = "12345";
+//     if (orderId) {
+//       resolve(orderId);
+//     }
+//   });
+//   return pr;
+// }
 
-function proceedToPayment() {
-  return new Promise((resolve, reject) => {
-    resolve("payment successful");
-  });
-}
+// function proceedToPayment() {
+//   return new Promise((resolve, reject) => {
+//     resolve("payment successful");
+//   });
+// }
 
-function showOrderSummary() {
-  return new Promise((resolve, reject) => {
-    resolve("update the wallet");
-  });
-}
+// function showOrderSummary() {
+//   return new Promise((resolve, reject) => {
+//     resolve("update the wallet");
+//   });
+// }
 
-function updateWallet() {
-  return new Promise((resolve, reject) => {
-    resolve("bal is 1000");
-  });
-}
+// function updateWallet() {
+//   return new Promise((resolve, reject) => {
+//     resolve("bal is 1000");
+//   });
+// }
 
-function validateCart() {
-  return true;
-}
-createOrder(cart)
-  .then((orderId) => {
-    console.log(orderId);
-    return orderId;
-  })
-  .then((val) => {
-    return proceedToPayment(val);
-  })
-  .then((info) => {
-    console.log(info);
-    return showOrderSummary(info);
-  })
-  .then((balance) => {
-    console.log(balance);
-    return updateWallet(balance);
-  })
-  .then((balance) => {
-    console.log(balance);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// function validateCart() {
+//   return true;
+// }
+// createOrder(cart)
+//   .then((orderId) => {
+//     console.log(orderId);
+//     return proceedToPayment(orderId);
+//   })
+//   .then((info) => {
+//     console.log(info);
+//     return showOrderSummary(info);
+//   })
+//   .then((balance) => {
+//     console.log(balance);
+//     return updateWallet(balance);
+//   })
+//   .then((balance) => {
+//     console.log(balance);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// a();
+// function a() {
+//    var b = 10;
+
+//     console.log(b);
+//    // 10
+//     // Instead of printing undefined it prints 10, So somehow this a
+   
+//    }
+//    console.log(a)
+
+// let a=10;
+// console.log(b)
+// var b=2;
+// // console.log(x)
+
+// let bcdef =1;
+
+// {console.log(bcdef)}
+
+// console.log(x)
+
+// let a = 20;
+// function x() {
+//  var a = 20;
+// }
+
+// console.log(a)
+
+// function x() {
+//     for(let i = 1; i<=5; i++){
+//      setTimeout(function() {
+//      console.log(i);
+//      }, i*1000);
+//      }
+//      console.log("Namaste Javascript");
+//     }
+//     x();
+
+    // function x() {
+    //     for(var i = 1; i<=5; i++){
+    //     function close(i) {
+    //     setTimeout(function() {
+    //     console.log(i);
+    //     }, i*1000);
+      
+    //     }
+    //     close(i); 
+
+    //     console.log("Namaste Javascript");
+    //    }
+    // }
+    //    x();
+
+    function printStr(str, cb) {
+        setTimeout(() => {
+        console.log(str);
+        cb();
+        }, Math.floor(Math.random() * 100) + 1)
+       }
+  
+       function printAll() {
+        printStr("A", () => {
+        printStr("B", () => {
+        printStr("C", () => {})
+        })
+        })
+       }
+       printAll()
+       
+    
+
+
