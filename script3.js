@@ -82,3 +82,18 @@ reloadBtn.addEventListener("click", (e) => {
   
 
 });
+
+
+function callBack(){
+console.log("Callback called")
+}
+
+function call2(param){
+  console.log("callback function called below")
+param()
+}
+
+call2(callBack)
+
+const evaluate= eval("2+3")
+console.log(typeof (typeof String))
