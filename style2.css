@@ -1,0 +1,13 @@
+body{
+    scroll-behavior: smooth;
+}
+
+#contact{
+    display: hidden;
+}
+div{
+    min-width: 100px;
+    min-height: 100px;
+    border: 1px solid black;
+    padding: 30px;
+}

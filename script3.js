@@ -129,3 +129,22 @@ const obj2 = {
 }
 
 obj2.__proto__ = obj
+
+// const grandParent=document.querySelector("#grandparent").addEventListener('click', ()=>console.log("grandparent clicked"),true)
+// const parent=document.querySelector("#parent").addEventListener('click', ()=>console.log("parent clicked"), false)
+// const child=document.querySelector("#child").addEventListener('click', ()=>console.log("child clicked"),false)
+const button=document.querySelector("button").addEventListener('click', ()=>{window.location.href="/index.html"})
+
+const arryy= [-5, -4, -2, 0, 2, 4, 6, 8]
+
+function getSumZero(){
+for(let number of arryy){
+  for(let j=1; j<arryy.length; j++){
+    if (number+arryy[j]==0){
+      return [number, arryy[j]]
+    }
+  }
+}
+}
+
+console.log(getSumZero(arryy))
