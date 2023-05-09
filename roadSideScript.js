@@ -248,6 +248,8 @@
 //console.log(evaluate(1)(2,3)) - partial apllication
 //console.log(evaluate(1)(2)(3)) - Currying
 
-function updateElementText(){
+// function updateElementText(){
   
-}
+// }
+
+//Promises
