@@ -252,4 +252,99 @@
   
 // }
 
+//this keyword questions
+
+// this.ab = 5;
+// const obj ={
+//     name: "lakshay",
+//     age:22,
+// callName:()=>{
+//     const callA = ()=>{
+//         console.log(this.name)
+//     }
+//     callA()
+// }
+// }
+
+
+// obj.callName()
+
+// const user = {
+//     name: "Lakshay kapoor",
+//     logMessage(){
+//         console.log(this.name)
+//     }
+// }
+
+// setTimeout(function(){
+//     user.logMessage()
+// }, 1000)
+
+//question
+//Create an object calculator
+
+// let calculator = {
+//     read(){
+//         this.a = +prompt("a= ", 0);
+//         this.b = +prompt("b= ",0);
+//     },
+
+//     sum(){
+//         return this.a + this.b
+//     },
+
+//     mul(){
+//         return this.a * this.b 
+//     }
+// }
+
+// calculator.read(10)
+
+// console.log(calculator.sum())
+
 //Promises
+
+// console.log("Start")
+
+// function importantAction(username,cb){
+//     setTimeout(()=>{
+//      cb("Subscribe to" + username)
+//     },1000)
+// }
+// const message= importantAction("Lakshay", function(msg){
+//      console.log(msg)
+//  })
+// // console.log(msg)
+
+// console.log("stop")
+
+//Polyfill for map, filter
+
+// const arr= [1, 2, 3, 4, 5]
+
+// const newArr = arr.map((arr)=> arr+1)
+// const filteredArr = arr.filter((arr)=> arr%2==0)
+
+// console.log(newArr)
+// console.log(filteredArr)
+
+// const newArr2 =()=>{
+//     let newArr2=[]
+//     for(let i=0; i< arr.length; i++){
+//         newArr2.push( arr[i]+1);
+//     }
+//    return newArr2;
+  
+// }
+// const filteredArr2 =()=>{
+//     let newArr3=[]
+//     for(let i=0; i< arr.length; i++){
+//         if(arr[i]%2===0){
+//             newArr3.push(arr[i]);
+//         }
+//     }
+//    return newArr3;
+  
+// }
+
+// console.log(filteredArr2())
