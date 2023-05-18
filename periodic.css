@@ -1,0 +1,35 @@
+.number-class{
+    
+    display: flex;
+    list-style: none;
+}
+.box-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 770px;
+    
+}
+
+.box-div2{
+    display: flex;
+    align-items: center;
+  
+    max-width: 1080px;
+}
+.hidden{
+   visibility: hidden;
+}
+.box{
+    width: 2em;
+    height: 2em;
+    padding: 2px 4px;
+    background-color: burlywood;
+    border: 1px solid black;
+    margin: 2px;
+
+}
+
+.innerbox-div{
+    display: flex;
+}

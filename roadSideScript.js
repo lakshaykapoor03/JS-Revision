@@ -348,3 +348,19 @@
 // }
 
 // console.log(filteredArr2())
+
+//Debouncing
+
+//ques
+const arr =[3, 4, 5, 6]
+arr.foo="Hi"
+
+
+for (let i in arr){
+    console.log(i)
+}
+
+for (let i of arr){
+    console.log(i)
+}
+
