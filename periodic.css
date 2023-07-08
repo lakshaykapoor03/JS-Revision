@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 770px;
+    max-width: 815px;
     
 }
 
@@ -33,3 +33,5 @@
 .innerbox-div{
     display: flex;
 }
+
+

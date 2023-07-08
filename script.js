@@ -385,14 +385,36 @@
         }, Math.floor(Math.random() * 100) + 1)
        }
   
-       function printAll() {
-        printStr("A", () => {
-        printStr("B", () => {
-        printStr("C", () => {})
-        })
-        })
-       }
-       printAll()
+    //    function printAll() {
+    //     printStr("A", () => {
+    //     printStr("B", () => {
+    //     printStr("C", () => {})
+    //     })
+    //     })
+    //    }
+    //    printAll()
+       
+    //    getName()
+
+    //    var getName = ()=>{
+    //     console.log("Lakhsay")
+    //    }
+
+    //    const arr = [1,2,3,4,5]
+    //    const shallowCopy = [...arr]
+
+    //    shallowCopy[2]=34
+
+    //    console.log(arr)
+
+    const originalArray = [1, 2, 3, 4];
+const shallowCopy = [...originalArray];
+
+shallowCopy[2] = 5;
+
+console.log(originalArray); // Output: [1, 2, [5, 4]]
+console.log(shallowCopy); // Output: [1, 2, [5, 4]]
+
        
     
 

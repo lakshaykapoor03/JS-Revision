@@ -352,15 +352,25 @@
 //Debouncing
 
 //ques
-const arr =[3, 4, 5, 6]
-arr.foo="Hi"
+// const arr =[3, 4, 5, 6]
+// arr.foo="Hi"
 
 
-for (let i in arr){
-    console.log(i)
-}
+// for (let i in arr){
+//     console.log(i)
+// }
 
-for (let i of arr){
-    console.log(i)
-}
+// for (let i of arr){
+//     console.log(i)
+// }
+
+var x = 7;
+
+       var getName = ()=>{
+        console.log("Lakhsay")
+       }
+
+       console.log(x)
+getName()
+
 
