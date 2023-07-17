@@ -364,13 +364,58 @@
 //     console.log(i)
 // }
 
-var x = 7;
 
-       var getName = ()=>{
-        console.log("Lakhsay")
-       }
+//        var getName = ()=>{
+//         console.log("Lakhsay")
+//        }
 
-       console.log(x)
-getName()
+//        console.log(x)
+// getName()
+
+
+
+
+// const getData =()=>{
+//        console.log("fetch data...", Math.random())
+// }
+
+// const debounce =()=>{
+//        let timer;
+//       return function(){
+//        clearTimeout(timer)
+//        timer= setTimeout(()=>{
+//                getData()
+//        }, 300)
+//       }
+       
+// }
+
+// const betterFunction = debounce()
+
+
+// console.log(a,b,c)
+// var a=10;
+// let b=20;
+// const c=30
+
+
+
+//Polyfill for map
+
+Array.prototype.myMap = function(cb){
+let temp = [];
+    for (let i=0; i<this.length;i++){
+temp.push(cb(this[i],i,this))
+    }
+
+    return temp;
+
+}
+
+const nims=[1,2,3,4]
+
+const add = nims.myMap((num,i)=>num+2)
+
+console.log(add)
 
 

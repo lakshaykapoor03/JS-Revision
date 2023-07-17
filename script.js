@@ -331,7 +331,7 @@
 //     console.log(b);
 //    // 10
 //     // Instead of printing undefined it prints 10, So somehow this a
-   
+
 //    }
 //    console.log(a)
 
@@ -363,59 +363,68 @@
 //     }
 //     x();
 
-    // function x() {
-    //     for(var i = 1; i<=5; i++){
-    //     function close(i) {
-    //     setTimeout(function() {
-    //     console.log(i);
-    //     }, i*1000);
-      
-    //     }
-    //     close(i); 
+// function x() {
+//     for(var i = 1; i<=5; i++){
+//     function close(i) {
+//     setTimeout(function() {
+//     console.log(i);
+//     }, i*1000);
 
-    //     console.log("Namaste Javascript");
-    //    }
-    // }
-    //    x();
+//     }
+//     close(i);
 
-    function printStr(str, cb) {
-        setTimeout(() => {
-        console.log(str);
-        cb();
-        }, Math.floor(Math.random() * 100) + 1)
-       }
-  
-    //    function printAll() {
-    //     printStr("A", () => {
-    //     printStr("B", () => {
-    //     printStr("C", () => {})
-    //     })
-    //     })
-    //    }
-    //    printAll()
-       
-    //    getName()
+//     console.log("Namaste Javascript");
+//    }
+// }
+//    x();
 
-    //    var getName = ()=>{
-    //     console.log("Lakhsay")
-    //    }
+function printStr(str, cb) {
+  setTimeout(() => {
+    console.log(str);
+    cb();
+  }, Math.floor(Math.random() * 100) + 1);
+}
 
-    //    const arr = [1,2,3,4,5]
-    //    const shallowCopy = [...arr]
+//    function printAll() {
+//     printStr("A", () => {
+//     printStr("B", () => {
+//     printStr("C", () => {})
+//     })
+//     })
+//    }
+//    printAll()
 
-    //    shallowCopy[2]=34
+//    getName()
 
-    //    console.log(arr)
+//    var getName = ()=>{
+//     console.log("Lakhsay")
+//    }
 
-    const originalArray = [1, 2, 3, 4];
-const shallowCopy = [...originalArray];
+//    const arr = [1,2,3,4,5]
+//    const shallowCopy = [...arr]
 
-shallowCopy[2] = 5;
+//    shallowCopy[2]=34
 
-console.log(originalArray); // Output: [1, 2, [5, 4]]
-console.log(shallowCopy); // Output: [1, 2, [5, 4]]
+//    console.log(arr)
 
-       
-    
+//     const originalArray = [1, 2, 3, 4];
+// const shallowCopy = [...originalArray];
 
+// shallowCopy[2] = 5;
 
+// console.log(originalArray); // Output: [1, 2, [5, 4]]
+// console.log(shallowCopy); // Output: [1, 2, [5, 4]]
+
+function callIt() {
+  for (var i = 1; i <= 5; i++) {
+    function enclosed(i) {
+      setTimeout(() => {
+        console.log(i);
+      }, i * 1000);
+    }
+   enclosed(i);
+
+  }
+}
+
+callIt();
