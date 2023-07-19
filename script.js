@@ -213,12 +213,14 @@
 //     }
 // }
 // )
-// setTimeout(()=>{
-//     console.log("yo yho honey singh")
-// setTimeout(()=>{
-//         console.log("settime 2")
-//     }, 2000)
-// }, 1000)
+  setTimeout(()=>{
+    console.log("yo yho honey singh")
+setTimeout(()=>{
+        console.log("settime 2")
+    }, 2000)
+}, 1000)
+
+
 
 // makeFriedRice.then(
 //     (friedRice)=>{
@@ -400,31 +402,35 @@ function printStr(str, cb) {
 //     console.log("Lakhsay")
 //    }
 
-//    const arr = [1,2,3,4,5]
-//    const shallowCopy = [...arr]
 
-//    shallowCopy[2]=34
+// function callIt() {
+//   for (var i = 1; i <= 5; i++) {
+//     function enclosed(i) {
+//       setTimeout(() => {
+//         console.log(i);
+//       }, i * 1000);
+//     }
+//    enclosed(i);
 
-//    console.log(arr)
+//   }
+// }
 
-//     const originalArray = [1, 2, 3, 4];
-// const shallowCopy = [...originalArray];
+// callIt();
 
-// shallowCopy[2] = 5;
 
-// console.log(originalArray); // Output: [1, 2, [5, 4]]
-// console.log(shallowCopy); // Output: [1, 2, [5, 4]]
+  //  const arr = [1,2,3,4,5]
+  //  const shallowCopy = [...arr]
 
-function callIt() {
-  for (var i = 1; i <= 5; i++) {
-    function enclosed(i) {
-      setTimeout(() => {
-        console.log(i);
-      }, i * 1000);
-    }
-   enclosed(i);
+  //  shallowCopy[2]=34
 
-  }
-}
+  //  console.log(arr)
 
-callIt();
+    const originalArray = [1, 2, [3, 4]];
+const shallowCopy = [...originalArray];
+
+shallowCopy[2][1] = 5;
+
+console.log(originalArray); // Output: [1, 2, [5, 4]]
+console.log(shallowCopy); // Output: [1, 2, [5, 4]]
+
+
