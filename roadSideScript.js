@@ -379,16 +379,16 @@
 //        console.log("fetch data...", Math.random())
 // }
 
-// const debounce =()=>{
-//        let timer;
-//       return function(){
-//        clearTimeout(timer)
-//        timer= setTimeout(()=>{
-//                getData()
-//        }, 300)
-//       }
+const debounce =()=>{
+       let timer;
+      return function(){
+       clearTimeout(timer)
+       timer= setTimeout(()=>{
+               getData()
+       }, 300)
+      }
        
-// }
+}
 
 // const betterFunction = debounce()
 

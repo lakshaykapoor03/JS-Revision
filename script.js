@@ -213,7 +213,7 @@
 //     }
 // }
 // )
-  setTimeout(()=>{
+setTimeout(()=>{
     console.log("yo yho honey singh")
 setTimeout(()=>{
         console.log("settime 2")
